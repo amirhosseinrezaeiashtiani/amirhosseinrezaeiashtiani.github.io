@@ -249,33 +249,35 @@
       position: relative;
       z-index: 1;
       display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 1.5rem 2rem;
-      align-items: center;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 1.35rem 1.75rem;
+      align-items: start;
     }
 
     .hero-copy { min-width: 0; }
 
     .portrait {
-      width: clamp(128px, 18vw, 168px);
+      width: clamp(148px, 16vw, 200px);
       aspect-ratio: 1;
-      border-radius: 28px;
+      border-radius: 50%;
       overflow: hidden;
-      border: 1px solid var(--stroke);
+      border: 3px solid var(--accent-border);
       box-shadow:
-        0 18px 40px rgba(0, 0, 0, 0.18),
-        0 0 0 6px var(--accent-soft);
+        0 14px 36px rgba(0, 0, 0, 0.16),
+        0 0 0 8px var(--accent-soft);
       background: var(--panel-inset);
       flex-shrink: 0;
+      margin-top: 0.15rem;
     }
     .portrait img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 18%;
+      object-position: center 12%;
       display: block;
-      transform: scale(1.02);
     }
+
+    .hero-copy .eyebrow { margin-bottom: 0.65rem; }
 
     .eyebrow {
       display: inline-flex;
@@ -296,33 +298,37 @@
     h1 {
       margin: 0;
       font-family: var(--font-display);
-      font-size: clamp(2.4rem, 7vw, 4.4rem);
-      line-height: 0.95;
+      font-size: clamp(2.1rem, 5.5vw, 3.6rem);
+      line-height: 0.98;
       letter-spacing: -0.045em;
       font-weight: 800;
-      max-width: 12ch;
+      max-width: 14ch;
       color: var(--text);
     }
 
     .headline {
-      margin: 1rem 0 0;
+      margin: 0.75rem 0 0;
       font-family: var(--font-display);
-      font-size: clamp(1.15rem, 2.5vw, 1.55rem);
+      font-size: clamp(1.05rem, 2.2vw, 1.35rem);
       font-weight: 700;
       color: var(--headline);
-      max-width: 34ch;
+      max-width: 36ch;
       letter-spacing: -0.02em;
     }
 
     .lede {
-      margin: 1rem 0 0;
+      position: relative;
+      z-index: 1;
+      margin: 1.25rem 0 0;
       color: var(--muted);
-      font-size: 1.05rem;
-      max-width: 58ch;
+      font-size: 1.02rem;
+      max-width: 68ch;
     }
 
     .hero-meta {
-      margin-top: 1.5rem;
+      position: relative;
+      z-index: 1;
+      margin-top: 1.1rem;
       display: flex;
       flex-wrap: wrap;
       gap: 0.55rem;
@@ -544,20 +550,30 @@
       .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       h1 { max-width: none; }
       .hero-top {
-        grid-template-columns: 1fr;
-        justify-items: start;
+        grid-template-columns: 112px minmax(0, 1fr);
+        gap: 1rem 1.1rem;
+        align-items: center;
       }
       .portrait {
-        width: 124px;
-        border-radius: 24px;
-        order: -1;
+        width: 112px;
+        margin-top: 0;
+        box-shadow:
+          0 10px 24px rgba(0, 0, 0, 0.14),
+          0 0 0 5px var(--accent-soft);
       }
+      .hero-copy .headline { display: none; }
     }
 
     @media (max-width: 560px) {
       .wrap { width: min(var(--max), calc(100% - 1.1rem)); }
       .topbar { align-items: flex-start; flex-direction: column; }
       .brand-text span { display: none; }
+      .hero-top {
+        grid-template-columns: 96px minmax(0, 1fr);
+        gap: 0.85rem;
+      }
+      .portrait { width: 96px; border-width: 2px; }
+      h1 { font-size: clamp(1.55rem, 7vw, 2.1rem); max-width: none; }
     }
 
     @media print {
@@ -585,13 +601,16 @@
         border-bottom: 2px solid #111 !important;
       }
       .portrait {
-        width: 92px;
-        border-radius: 18px;
-        box-shadow: none;
-        float: right;
-        margin: 0 0 8pt 10pt;
+        width: 28mm;
+        height: 28mm;
+        border-radius: 50%;
+        border: 1.5pt solid #bbb !important;
+        box-shadow: none !important;
+        float: left;
+        margin: 0 10pt 6pt 0;
       }
       .hero-top { display: block; }
+      .lede, .hero-meta { clear: both; }
       h1, h2, h3, .headline, .job-head h3, .project h3, .brand-text strong { color: #111 !important; }
       .lede, .section-intro, .where, .project p, .stat span, ul.bullets, .ai-box p, .brand-text span { color: #333 !important; }
       .eyebrow, .when, .project .stack, .stat b, .chip.hot, h2 .tag { color: #0a6b4a !important; }
@@ -663,27 +682,27 @@
 
     <header class="hero">
       <div class="hero-top">
+        <div class="portrait">
+          <img src="avatar.png" width="200" height="200" alt="Portrait of Amirhossein Rezaei Ashtiani" />
+        </div>
         <div class="hero-copy">
           <div class="eyebrow">Backend · Fintech · Applied AI</div>
           <h1>Amirhossein Rezaei Ashtiani</h1>
           <p class="headline">I design and ship production systems that book, charge, notify, scrape, automate — and increasingly think.</p>
-          <p class="lede">
-            Software engineer with a fintech backbone and a platform mindset. Started in high-throughput
-            banking/payment switches at Radin (Hasin Group), then moved into owning mission-critical
-            services at Eyvan Group — travel booking, payments, automation fleets, and AI product surfaces —
-            with a bias for systems that survive real traffic, messy partners, and rapid product iteration.
-          </p>
-          <div class="hero-meta">
-            <span class="pill">Tehran, Iran</span>
-            <span class="pill">Amirkabir University of Technology</span>
-            <span class="pill"><a href="https://linkedin.com/in/amirhossein-rezaeiashtiani-b46b171ba" target="_blank" rel="noopener">LinkedIn</a></span>
-            <span class="pill"><a href="https://github.com/amirhosseinrezaeiashtiani" target="_blank" rel="noopener">GitHub</a></span>
-            <span class="pill"><a href="https://amirhosseinrezaeiashtiani.github.io/">Portfolio</a></span>
-          </div>
         </div>
-        <div class="portrait">
-          <img src="avatar.png" width="168" height="168" alt="Portrait of Amirhossein Rezaei Ashtiani" />
-        </div>
+      </div>
+      <p class="lede">
+        Software engineer with a fintech backbone and a platform mindset. Started in high-throughput
+        banking/payment switches at Radin (Hasin Group), then moved into owning mission-critical
+        services at Eyvan Group — travel booking, payments, automation fleets, and AI product surfaces —
+        with a bias for systems that survive real traffic, messy partners, and rapid product iteration.
+      </p>
+      <div class="hero-meta">
+        <span class="pill">Tehran, Iran</span>
+        <span class="pill">Amirkabir University of Technology</span>
+        <span class="pill"><a href="https://linkedin.com/in/amirhossein-rezaeiashtiani-b46b171ba" target="_blank" rel="noopener">LinkedIn</a></span>
+        <span class="pill"><a href="https://github.com/amirhosseinrezaeiashtiani" target="_blank" rel="noopener">GitHub</a></span>
+        <span class="pill"><a href="https://amirhosseinrezaeiashtiani.github.io/">Portfolio</a></span>
       </div>
       <div class="stats">
         <div class="stat"><b>4+ yrs</b><span>shipping production software</span></div>
