@@ -20,7 +20,7 @@
       --accent-soft: #d7efef;
       --shadow: 0 18px 50px rgba(19, 32, 44, 0.08);
       --radius: 18px;
-      --max: 920px;
+      --max: 960px;
     }
 
     * { box-sizing: border-box; }
@@ -67,8 +67,7 @@
       border-radius: 28px;
       display: grid;
       place-items: center;
-      background:
-        linear-gradient(145deg, #0c6b6e, #164b63);
+      background: linear-gradient(145deg, #0c6b6e, #164b63);
       color: #f4fbfb;
       font-family: "Newsreader", Georgia, serif;
       font-size: 2.35rem;
@@ -127,9 +126,7 @@
 
     main { padding: 0 2rem 2rem; }
 
-    section {
-      padding-top: 1.55rem;
-    }
+    section { padding-top: 1.55rem; }
 
     section + section {
       border-top: 1px solid var(--line);
@@ -149,14 +146,10 @@
       margin: 0;
       color: var(--ink);
       font-size: 1.02rem;
-      max-width: 62ch;
+      max-width: 68ch;
     }
 
-    .job {
-      display: grid;
-      gap: 0.35rem;
-    }
-
+    .job { display: grid; gap: 0.35rem; }
     .job + .job { margin-top: 1.25rem; }
 
     .job-head {
@@ -201,14 +194,11 @@
 
     li + li { margin-top: 0.35rem; }
 
-    .skills {
-      display: grid;
-      gap: 0.55rem;
-    }
+    .skills { display: grid; gap: 0.7rem; }
 
     .skill-row {
       display: grid;
-      grid-template-columns: 9.5rem 1fr;
+      grid-template-columns: 10.5rem 1fr;
       gap: 0.75rem;
       align-items: start;
     }
@@ -229,24 +219,55 @@
     .chips {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.45rem;
+      gap: 0.4rem;
     }
 
     .chip {
       display: inline-flex;
       align-items: center;
-      padding: 0.28rem 0.7rem;
+      padding: 0.26rem 0.65rem;
       border-radius: 999px;
       background: var(--accent-soft);
       color: #0a4f52;
-      font-size: 0.84rem;
+      font-size: 0.82rem;
       font-weight: 600;
+    }
+
+    .project {
+      padding: 0.95rem 0;
+    }
+
+    .project + .project {
+      border-top: 1px dashed var(--line);
+    }
+
+    .project-title {
+      margin: 0;
+      font-size: 1.02rem;
+      font-weight: 700;
+    }
+
+    .project-meta {
+      margin: 0.2rem 0 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .project p {
+      margin: 0.45rem 0 0;
+      font-size: 0.95rem;
     }
 
     .two-col {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1.25rem;
+    }
+
+    .note {
+      margin: 0.75rem 0 0;
+      font-size: 0.86rem;
+      color: var(--muted);
     }
 
     footer {
@@ -292,7 +313,7 @@
             <span><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/amirhossein-rezaeiashtiani-b46b171ba" target="_blank" rel="noopener">amirhossein-rezaeiashtiani</a></span>
             <span><strong>GitHub:</strong> <a href="https://github.com/amirhosseinrezaeiashtiani" target="_blank" rel="noopener">amirhosseinrezaeiashtiani</a></span>
             <span><strong>Website:</strong> <a href="https://amirhosseinrezaeiashtiani.github.io/">amirhosseinrezaeiashtiani.github.io</a></span>
-            <span><strong>Nationality:</strong> Iranian</span>
+            <span><strong>Focus:</strong> APIs, payments, staging &amp; delivery</span>
           </div>
         </div>
       </header>
@@ -301,11 +322,12 @@
         <section class="profile" id="profile">
           <h2>Profile</h2>
           <p>
-            Backend software engineer focused on reliable APIs, payment and credit flows,
-            and shipping features for production travel platforms. Currently building and
-            operating backend systems at Eyvan Group (EyvanTrip), with hands-on work on
-            retirement-fund booking chains, staging environments, and applied AI research
-            for product delivery.
+            Backend software engineer at Eyvan Group working across a multi-repo travel /
+            hospitality platform. Day-to-day work centers on ASP.NET Core domain APIs
+            (booking, credit/payment verification, notifications), Python services and bots,
+            staging/release readiness, and applied AI tooling for engineering delivery.
+            Comfortable reading and shipping across the wider company stack — Next.js frontends,
+            scrapers, CRM, and ops automation — when features need FE↔BE coordination.
           </p>
         </section>
 
@@ -319,25 +341,89 @@
             </div>
             <p class="job-place">Eyvan Group / <a href="https://eyvantrip.com" target="_blank" rel="noopener">eyvantrip.com</a> — Tehran, Iran</p>
             <ul>
-              <li>Design and maintain backend services for an Iranian hospitality and travel platform (hotel booking, organizational flows, and related domain APIs).</li>
-              <li>Delivered and iterated the retirement-fund (بازنشستگی) credit path: validate → deduct → verify/pay, including operational edge cases.</li>
-              <li>Own staging and release readiness for backend changes so frontend and product can test safely before production.</li>
-              <li>Explore and prototype AI-assisted tooling to speed up engineering research and delivery inside the team.</li>
+              <li>Build and maintain core backend services for hotel/travel booking, organizational flows, and payment integrations (Parbad / ZarinPal).</li>
+              <li>Delivered retirement-fund (بازنشستگی) credit flows: validate → deduct → verify/pay, including staging and production edge cases.</li>
+              <li>Own staging readiness for backend changes so frontend and product can test safely before release.</li>
+              <li>Contribute across related services: notifications/SMS, scrapers, reporting bots, inventory, and AI chat tooling.</li>
             </ul>
           </div>
         </section>
 
-        <section id="education">
-          <h2>Education</h2>
-          <div class="job">
-            <div class="job-head">
-              <h3 class="job-title">B.Sc. Student — Computer Engineering / related track</h3>
-              <div class="job-dates">Amirkabir University of Technology</div>
+        <section id="projects">
+          <h2>Selected Projects (Eyvan Group / related)</h2>
+          <p class="note">Proprietary company repositories — summarized from the internal engineering stack. Source is not public.</p>
+
+          <div class="project">
+            <h3 class="project-title">EyvanTripService</h3>
+            <p class="project-meta">Core booking / domain API · C# · ASP.NET Core · .NET 8</p>
+            <p>Clean Architecture API (API / Application / Domain / Infrastructure) with MediatR, FluentValidation, EF Core + SQL Server, Redis cache, JWT auth, Swagger, Serilog → Elasticsearch/Seq, Health Checks, rate limiting, and Parbad payment gateways.</p>
+            <div class="chips" style="margin-top:0.55rem">
+              <span class="chip">ASP.NET Core</span>
+              <span class="chip">EF Core</span>
+              <span class="chip">SQL Server</span>
+              <span class="chip">Redis</span>
+              <span class="chip">Parbad / ZarinPal</span>
+              <span class="chip">Docker</span>
+              <span class="chip">GitLab CI/CD</span>
             </div>
-            <p class="job-place">Tehran Polytechnic — Tehran, Iran</p>
-            <ul>
-              <li>Undergraduate studies at Amirkabir University of Technology (Tehran Polytechnic).</li>
-            </ul>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">EyvanNotification</h3>
+            <p class="project-meta">Notifications platform · C# · .NET 8</p>
+            <p>Notification/SMS service (Ghasedak), WebSocket helpers, scheduled tasks, same Clean Architecture patterns as the core service.</p>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">Front-End &amp; Admin-Panel</h3>
+            <p class="project-meta">Public site + internal ops panel · Next.js · React</p>
+            <p>Customer-facing travel UI (Next.js 16, React 19, Tailwind, Mapbox/Neshan, Jalali date tooling) and Admin Panel (MUI, Recharts, Excel/PDF export, QR, captcha) consuming backend APIs.</p>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">InventoryManagement</h3>
+            <p class="project-meta">Inventory / ops backend · C# · .NET 9</p>
+            <p>ASP.NET Identity, EF Core + SQL Server, Dapper, MediatR, FluentValidation, MailKit, xUnit test suite.</p>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">Scraper &amp; Scraper_Bot</h3>
+            <p class="project-meta">Data ingestion · Python</p>
+            <p>FastAPI + Selenium/BeautifulSoup scraping pipeline with SQL (pyodbc), scheduling, Docker, and a companion bot for operational workflows.</p>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">eyvanaichatbot</h3>
+            <p class="project-meta">AI / messaging · Python · Django</p>
+            <p>Django + PostgreSQL + Celery/Redis chatbot stack (Pyrogram), Gunicorn deployment via Docker Compose.</p>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">Automation &amp; ops services</h3>
+            <p class="project-meta">Python microservices &amp; bots</p>
+            <p>
+              <strong>AirflowDAGs</strong> — occupancy/income/checkout warning jobs;
+              <strong>EyvanTripReportBot</strong> &amp; <strong>balereportbot</strong> — Telegram reporting;
+              <strong>CurrencyService</strong> / <strong>currency-tgju</strong> — FX feeds (Flask, Telethon);
+              <strong>microtik</strong> — RouterOS/MikroTik API wrapper;
+              <strong>train-reservation</strong> — FastAPI + SQLAlchemy + Jalali tooling.
+            </p>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">SmartLockApiWrapper</h3>
+            <p class="project-meta">Hardware integration · C# / native SDK · .NET 9</p>
+            <p>ASP.NET wrapper around vendor smart-lock C/C++ SDKs (x86), exposed via Swagger API.</p>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">Related products</h3>
+            <p class="project-meta">Same engineering group</p>
+            <p>
+              <strong>EcoTourismService</strong> (.NET 8 Clean Architecture);
+              <strong>Perspolis</strong> travel front (Next.js/TypeScript) + service (C# OTA/hotel/flight integrations);
+              <strong>eyvancrm</strong> (Laravel 12 / PHP 8.3 / Vite CRM).
+            </p>
           </div>
         </section>
 
@@ -345,24 +431,101 @@
           <h2>Technical Skills</h2>
           <div class="skills">
             <div class="skill-row">
-              <dt>Focus</dt>
+              <dt>Languages</dt>
               <dd>
                 <div class="chips">
-                  <span class="chip">Backend APIs</span>
-                  <span class="chip">Domain / booking flows</span>
-                  <span class="chip">Staging &amp; delivery</span>
-                  <span class="chip">AI-assisted engineering</span>
+                  <span class="chip">C#</span>
+                  <span class="chip">Python</span>
+                  <span class="chip">JavaScript / TypeScript</span>
+                  <span class="chip">SQL</span>
+                  <span class="chip">PHP</span>
+                  <span class="chip">C / native interop</span>
+                  <span class="chip">HTML / CSS</span>
                 </div>
               </dd>
             </div>
             <div class="skill-row">
-              <dt>Practices</dt>
-              <dd>REST API design, debugging production issues, cross-team FE↔BE delivery, Git-based collaboration</dd>
+              <dt>Backend</dt>
+              <dd>
+                <div class="chips">
+                  <span class="chip">ASP.NET Core (.NET 8/9)</span>
+                  <span class="chip">EF Core</span>
+                  <span class="chip">MediatR</span>
+                  <span class="chip">FluentValidation</span>
+                  <span class="chip">Dapper</span>
+                  <span class="chip">FastAPI</span>
+                  <span class="chip">Flask</span>
+                  <span class="chip">Django</span>
+                  <span class="chip">Celery</span>
+                  <span class="chip">Laravel</span>
+                </div>
+              </dd>
             </div>
             <div class="skill-row">
-              <dt>Domains</dt>
-              <dd>Travel &amp; hospitality platforms, credit/payment verification chains, B2B organizational booking concerns</dd>
+              <dt>Frontend</dt>
+              <dd>
+                <div class="chips">
+                  <span class="chip">Next.js</span>
+                  <span class="chip">React</span>
+                  <span class="chip">Tailwind CSS</span>
+                  <span class="chip">MUI</span>
+                  <span class="chip">Radix UI</span>
+                  <span class="chip">Axios</span>
+                  <span class="chip">Mapbox / Neshan</span>
+                </div>
+              </dd>
             </div>
+            <div class="skill-row">
+              <dt>Data &amp; messaging</dt>
+              <dd>
+                <div class="chips">
+                  <span class="chip">SQL Server</span>
+                  <span class="chip">PostgreSQL</span>
+                  <span class="chip">Redis</span>
+                  <span class="chip">Elasticsearch</span>
+                  <span class="chip">Selenium scraping</span>
+                  <span class="chip">Apache Airflow</span>
+                  <span class="chip">Telegram bots</span>
+                </div>
+              </dd>
+            </div>
+            <div class="skill-row">
+              <dt>Payments &amp; domain</dt>
+              <dd>
+                <div class="chips">
+                  <span class="chip">Parbad</span>
+                  <span class="chip">ZarinPal</span>
+                  <span class="chip">JWT / Identity</span>
+                  <span class="chip">Ghasedak SMS</span>
+                  <span class="chip">Booking / credit flows</span>
+                  <span class="chip">Smart lock SDKs</span>
+                </div>
+              </dd>
+            </div>
+            <div class="skill-row">
+              <dt>DevOps</dt>
+              <dd>
+                <div class="chips">
+                  <span class="chip">Docker / Compose</span>
+                  <span class="chip">GitLab CI/CD</span>
+                  <span class="chip">Serilog / Seq</span>
+                  <span class="chip">Health Checks</span>
+                  <span class="chip">Staging environments</span>
+                  <span class="chip">Swagger / OpenAPI</span>
+                </div>
+              </dd>
+            </div>
+          </div>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <div class="job">
+            <div class="job-head">
+              <h3 class="job-title">Amirkabir University of Technology (Tehran Polytechnic)</h3>
+              <div class="job-dates">Undergraduate</div>
+            </div>
+            <p class="job-place">Tehran, Iran</p>
           </div>
         </section>
 
@@ -378,9 +541,9 @@
           <section id="interests">
             <h2>Interests</h2>
             <ul>
-              <li>Reliable backend systems and clean domain modeling</li>
-              <li>Applying AI to accelerate software delivery</li>
-              <li>Shipping features end-to-end with product and frontend partners</li>
+              <li>Reliable backend systems &amp; domain modeling</li>
+              <li>Payment / credit verification flows</li>
+              <li>AI-assisted engineering delivery</li>
             </ul>
           </section>
         </div>
