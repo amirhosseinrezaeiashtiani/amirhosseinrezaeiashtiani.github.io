@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curriculum Vitae — Amirhossein Rezaei Ashtiani</title>
+  <meta name="description" content="Curriculum Vitae of Amirhossein Rezaei Ashtiani — Backend Software Engineer at Eyvan Group." />
+  <meta name="author" content="Amirhossein Rezaei Ashtiani" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #13202c;
+      --muted: #4d5d6d;
+      --line: #c9d4df;
+      --paper: #f3f6f9;
+      --panel: #ffffff;
+      --accent: #0c6b6e;
+      --accent-soft: #d7efef;
+      --shadow: 0 18px 50px rgba(19, 32, 44, 0.08);
+      --radius: 18px;
+      --max: 920px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Manrope", system-ui, sans-serif;
+      background:
+        radial-gradient(1200px 500px at 10% -10%, #d9ecec 0%, transparent 55%),
+        radial-gradient(900px 420px at 100% 0%, #dfe8f3 0%, transparent 50%),
+        linear-gradient(180deg, #e8eef4 0%, var(--paper) 40%, #e7edf3 100%);
+      min-height: 100vh;
+      line-height: 1.55;
+    }
+
+    .page {
+      width: min(var(--max), calc(100% - 2rem));
+      margin: 2.5rem auto 3.5rem;
+    }
+
+    .sheet {
+      background: var(--panel);
+      border: 1px solid rgba(201, 212, 223, 0.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    header.hero {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.5rem 1.75rem;
+      padding: 2rem 2rem 1.6rem;
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(135deg, rgba(12, 107, 110, 0.08), transparent 42%),
+        linear-gradient(180deg, #fbfdff, #f7fafc);
+    }
+
+    .avatar {
+      width: 118px;
+      height: 118px;
+      border-radius: 28px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(145deg, #0c6b6e, #164b63);
+      color: #f4fbfb;
+      font-family: "Newsreader", Georgia, serif;
+      font-size: 2.35rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.18);
+      flex-shrink: 0;
+    }
+
+    .identity h1 {
+      margin: 0;
+      font-family: "Newsreader", Georgia, serif;
+      font-size: clamp(1.85rem, 4vw, 2.45rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    .role {
+      margin: 0.45rem 0 0;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 1.02rem;
+    }
+
+    .meta {
+      margin-top: 1rem;
+      display: grid;
+      gap: 0.35rem 1.25rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    .meta span {
+      display: flex;
+      gap: 0.45rem;
+      align-items: baseline;
+      min-width: 0;
+    }
+
+    .meta strong {
+      color: var(--ink);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .meta a {
+      color: var(--accent);
+      text-decoration: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .meta a:hover { text-decoration: underline; }
+
+    main { padding: 0 2rem 2rem; }
+
+    section {
+      padding-top: 1.55rem;
+    }
+
+    section + section {
+      border-top: 1px solid var(--line);
+      margin-top: 1.55rem;
+    }
+
+    h2 {
+      margin: 0 0 0.85rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .profile p {
+      margin: 0;
+      color: var(--ink);
+      font-size: 1.02rem;
+      max-width: 62ch;
+    }
+
+    .job {
+      display: grid;
+      gap: 0.35rem;
+    }
+
+    .job + .job { margin-top: 1.25rem; }
+
+    .job-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.25rem 1rem;
+      align-items: baseline;
+    }
+
+    .job-title {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .job-dates {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .job-place {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .job-place a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .job-place a:hover { text-decoration: underline; }
+
+    ul {
+      margin: 0.55rem 0 0;
+      padding-left: 1.15rem;
+      color: var(--ink);
+    }
+
+    li + li { margin-top: 0.35rem; }
+
+    .skills {
+      display: grid;
+      gap: 0.55rem;
+    }
+
+    .skill-row {
+      display: grid;
+      grid-template-columns: 9.5rem 1fr;
+      gap: 0.75rem;
+      align-items: start;
+    }
+
+    .skill-row dt {
+      margin: 0;
+      font-weight: 700;
+      color: var(--ink);
+      font-size: 0.92rem;
+    }
+
+    .skill-row dd {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.28rem 0.7rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #0a4f52;
+      font-size: 0.84rem;
+      font-weight: 600;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    footer {
+      margin-top: 1rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 720px) {
+      .page { width: min(var(--max), calc(100% - 1.25rem)); margin: 1rem auto 2rem; }
+      header.hero {
+        grid-template-columns: 1fr;
+        justify-items: start;
+        padding: 1.4rem 1.25rem 1.2rem;
+      }
+      main { padding: 0 1.25rem 1.5rem; }
+      .meta { grid-template-columns: 1fr; }
+      .skill-row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .two-col { grid-template-columns: 1fr; }
+      .avatar { width: 96px; height: 96px; border-radius: 22px; font-size: 1.9rem; }
+    }
+
+    @media print {
+      body { background: white; }
+      .page { width: 100%; margin: 0; }
+      .sheet { box-shadow: none; border: none; border-radius: 0; }
+      a { color: inherit !important; text-decoration: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <article class="sheet">
+      <header class="hero">
+        <div class="avatar" aria-hidden="true">AR</div>
+        <div class="identity">
+          <h1>Amirhossein Rezaei Ashtiani</h1>
+          <p class="role">Backend Software Engineer</p>
+          <div class="meta">
+            <span><strong>Location:</strong> Tehran, Iran</span>
+            <span><strong>Education:</strong> Amirkabir University of Technology</span>
+            <span><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/amirhossein-rezaeiashtiani-b46b171ba" target="_blank" rel="noopener">amirhossein-rezaeiashtiani</a></span>
+            <span><strong>GitHub:</strong> <a href="https://github.com/amirhosseinrezaeiashtiani" target="_blank" rel="noopener">amirhosseinrezaeiashtiani</a></span>
+            <span><strong>Website:</strong> <a href="https://amirhosseinrezaeiashtiani.github.io/">amirhosseinrezaeiashtiani.github.io</a></span>
+            <span><strong>Nationality:</strong> Iranian</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="profile" id="profile">
+          <h2>Profile</h2>
+          <p>
+            Backend software engineer focused on reliable APIs, payment and credit flows,
+            and shipping features for production travel platforms. Currently building and
+            operating backend systems at Eyvan Group (EyvanTrip), with hands-on work on
+            retirement-fund booking chains, staging environments, and applied AI research
+            for product delivery.
+          </p>
+        </section>
+
+        <section id="experience">
+          <h2>Professional Experience</h2>
+
+          <div class="job">
+            <div class="job-head">
+              <h3 class="job-title">Backend Software Engineer</h3>
+              <div class="job-dates">2024 – Present</div>
+            </div>
+            <p class="job-place">Eyvan Group / <a href="https://eyvantrip.com" target="_blank" rel="noopener">eyvantrip.com</a> — Tehran, Iran</p>
+            <ul>
+              <li>Design and maintain backend services for an Iranian hospitality and travel platform (hotel booking, organizational flows, and related domain APIs).</li>
+              <li>Delivered and iterated the retirement-fund (بازنشستگی) credit path: validate → deduct → verify/pay, including operational edge cases.</li>
+              <li>Own staging and release readiness for backend changes so frontend and product can test safely before production.</li>
+              <li>Explore and prototype AI-assisted tooling to speed up engineering research and delivery inside the team.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <div class="job">
+            <div class="job-head">
+              <h3 class="job-title">B.Sc. Student — Computer Engineering / related track</h3>
+              <div class="job-dates">Amirkabir University of Technology</div>
+            </div>
+            <p class="job-place">Tehran Polytechnic — Tehran, Iran</p>
+            <ul>
+              <li>Undergraduate studies at Amirkabir University of Technology (Tehran Polytechnic).</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="skills">
+          <h2>Technical Skills</h2>
+          <div class="skills">
+            <div class="skill-row">
+              <dt>Focus</dt>
+              <dd>
+                <div class="chips">
+                  <span class="chip">Backend APIs</span>
+                  <span class="chip">Domain / booking flows</span>
+                  <span class="chip">Staging &amp; delivery</span>
+                  <span class="chip">AI-assisted engineering</span>
+                </div>
+              </dd>
+            </div>
+            <div class="skill-row">
+              <dt>Practices</dt>
+              <dd>REST API design, debugging production issues, cross-team FE↔BE delivery, Git-based collaboration</dd>
+            </div>
+            <div class="skill-row">
+              <dt>Domains</dt>
+              <dd>Travel &amp; hospitality platforms, credit/payment verification chains, B2B organizational booking concerns</dd>
+            </div>
+          </div>
+        </section>
+
+        <div class="two-col">
+          <section id="languages">
+            <h2>Languages</h2>
+            <ul>
+              <li><strong>Persian (Farsi):</strong> Native</li>
+              <li><strong>English:</strong> Professional working proficiency</li>
+            </ul>
+          </section>
+
+          <section id="interests">
+            <h2>Interests</h2>
+            <ul>
+              <li>Reliable backend systems and clean domain modeling</li>
+              <li>Applying AI to accelerate software delivery</li>
+              <li>Shipping features end-to-end with product and frontend partners</li>
+            </ul>
+          </section>
+        </div>
+      </main>
+    </article>
+
+    <footer>
+      Curriculum Vitae · Amirhossein Rezaei Ashtiani · Hosted on GitHub Pages
+    </footer>
+  </div>
+</body>
+</html>
