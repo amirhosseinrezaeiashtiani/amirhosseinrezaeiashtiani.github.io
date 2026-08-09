@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23d7dde6'/%3E%3Cpath fill='%23141c28' d='M18 40c6-14 10-22 18-22 5 0 8 3 8 8 0 9-8 12-14 15-4 2-7 4-8 7h22c1.5 0 2.5 1.2 2.5 2.6S45.5 54 44 54H16c-2 0-3.2-1.7-2.7-3.6C14.5 46 16 43 18 40zm16-16c-4.5 0-7.5 5.5-11 14 5-2.5 12-5 12-10 0-2-1-4-1-4z'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d5dde8'/%3E%3Cpath fill='%23131820' d='M12.5 49h6.8l2.55-7.55h12.05L36.5 49H43.8L30.35 12.5h-7.7L12.5 49zm11.05-13.2 4.05-12.05 4.05 12.05H23.55zM39.2 12.5h8.35c6.55 0 10.95 3.7 10.95 9.65 0 4.95-2.75 8.15-6.7 9.45L58.5 49h-7.55l-5.85-15.2h-2.55V49H39.2V12.5zm7.85 5.7h-1.85v9.05h1.95c3.05 0 4.8-1.45 4.8-4.55 0-3-1.65-4.5-4.9-4.5z'/%3E%3Ccircle cx='52.2' cy='16.2' r='2.8' fill='%230c6b6e'/%3E%3C/svg%3E" />
   <style>
     :root {
       --bg0: #e8eef5;
@@ -46,8 +46,9 @@
       --pill-bg: rgba(255, 255, 255, 0.75);
       --pill-text: #3a4b5c;
       --shadow: 0 24px 60px rgba(20, 40, 70, 0.1);
-      --logo-disc: #d9e0ea;
-      --logo-ink: #141c28;
+      --logo-disc: #d5dde8;
+      --logo-ink: #131820;
+      --logo-spark: #0c6b6e;
       --btn-primary-text: #041018;
       --radius: 22px;
       --max: 1080px;
@@ -80,8 +81,9 @@
       --pill-bg: rgba(0, 0, 0, 0.28);
       --pill-text: #c7d5e4;
       --shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
-      --logo-disc: #cfd6df;
-      --logo-ink: #121820;
+      --logo-disc: #c5ced9;
+      --logo-ink: #0e141c;
+      --logo-spark: #3ddc97;
       --btn-primary-text: #041018;
       color-scheme: dark;
     }
@@ -143,13 +145,14 @@
     }
 
     .logo {
-      width: 42px;
-      height: 42px;
+      width: 44px;
+      height: 44px;
       flex-shrink: 0;
-      filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.12));
+      filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.12));
     }
     .logo .disc { fill: var(--logo-disc); }
     .logo .mark { fill: var(--logo-ink); }
+    .logo .spark { fill: var(--logo-spark); }
 
     .brand-text {
       display: flex;
@@ -569,8 +572,9 @@
         gap: 6pt 14pt;
       }
       .project:hover { transform: none; }
-      .logo .disc { fill: #d9e0ea !important; }
-      .logo .mark { fill: #141c28 !important; }
+      .logo .disc { fill: #d5dde8 !important; }
+      .logo .mark { fill: #131820 !important; }
+      .logo .spark { fill: #0c6b6e !important; }
       footer.site { color: #666 !important; margin-top: 8pt; }
     }
   </style>
@@ -580,13 +584,15 @@
     <div class="topbar no-print">
       <a class="brand" href="https://amirhosseinrezaeiashtiani.github.io/" aria-label="Amirhossein Rezaei Ashtiani">
         <svg class="logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle class="disc" cx="32" cy="32" r="32" />
-          <path class="mark" d="M19.2 41.2c5.8-13.8 10.2-21.6 17.8-21.6 4.9 0 8.1 3.1 8.1 7.8 0 8.6-7.4 11.8-13.5 14.7-3.9 1.9-6.8 3.7-7.8 6.9h20.8c1.5 0 2.5 1.15 2.5 2.55S46.1 54 44.6 54H17.4c-2.05 0-3.25-1.75-2.7-3.7.8-2.85 2.3-5.6 4.5-9.1zm15.1-16.5c-4.2 0-7.2 5.2-10.5 13.2 4.7-2.35 11.4-4.85 11.4-9.7 0-1.85-.95-3.5-.9-3.5z" />
-          <circle class="mark" cx="42.8" cy="24.2" r="2.1" opacity="0.9" />
+          <!-- Personal mark: interlocking AR for Amirhossein Rezaei + spark for Ashtiani / signal -->
+          <rect class="disc" x="1" y="1" width="62" height="62" rx="18" />
+          <path class="mark" d="M12.5 49h6.8l2.55-7.55h12.05L36.5 49H43.8L30.35 12.5h-7.7L12.5 49zm11.05-13.2 4.05-12.05 4.05 12.05H23.55z" />
+          <path class="mark" d="M39.2 12.5h8.35c6.55 0 10.95 3.7 10.95 9.65 0 4.95-2.75 8.15-6.7 9.45L58.5 49h-7.55l-5.85-15.2h-2.55V49H39.2V12.5zm7.85 5.7h-1.85v9.05h1.95c3.05 0 4.8-1.45 4.8-4.55 0-3-1.65-4.5-4.9-4.5z" />
+          <circle class="spark" cx="52.2" cy="16.2" r="2.8" />
         </svg>
         <span class="brand-text">
           <strong>Amirhossein</strong>
-          <span>Rezaei Ashtiani</span>
+          <span>Rezaei Ashtiani · AR</span>
         </span>
       </a>
       <div class="actions">
