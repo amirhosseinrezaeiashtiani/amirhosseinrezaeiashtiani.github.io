@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Amirhossein Rezaei Ashtiani — Backend & Applied AI Engineer</title>
-  <meta name="description" content="Amirhossein Rezaei Ashtiani — Backend, Fintech & Applied AI Engineer. Payment switches at Radin (Hasin), platforms & AI at Eyvan Group." />
+  <title>Amirhossein Rezaei Ashtiani — Software Engineer</title>
+  <meta name="description" content="Amirhossein Rezaei Ashtiani — Software engineer (backend, fintech, applied AI). Radin / Hasin, Eyvan Group. AUT. Published researcher." />
   <meta name="author" content="Amirhossein Rezaei Ashtiani" />
   <script>
     (function () {
@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d5dde8'/%3E%3Cpath fill='%23131820' d='M12.5 49h6.8l2.55-7.55h12.05L36.5 49H43.8L30.35 12.5h-7.7L12.5 49zm11.05-13.2 4.05-12.05 4.05 12.05H23.55zM39.2 12.5h8.35c6.55 0 10.95 3.7 10.95 9.65 0 4.95-2.75 8.15-6.7 9.45L58.5 49h-7.55l-5.85-15.2h-2.55V49H39.2V12.5zm7.85 5.7h-1.85v9.05h1.95c3.05 0 4.8-1.45 4.8-4.55 0-3-1.65-4.5-4.9-4.5z'/%3E%3Ccircle cx='52.2' cy='16.2' r='2.8' fill='%230c6b6e'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d5dde8'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23131820' stroke-width='2.2'/%3E%3Cpath stroke='%23131820' stroke-width='2.2' stroke-linecap='round' d='M32 10v12M32 42v12M10 32h12M42 32h12'/%3E%3Ccircle cx='32' cy='32' r='3.2' fill='%230c6b6e'/%3E%3Cpath fill='%23131820' d='M28 38V22l6 10 6-10v16h-3.2V28l-4.5 7.5h-2.6L25.2 28v10z'/%3E%3C/svg%3E" />
   <style>
     :root {
       --bg0: #e8eef5;
@@ -151,7 +151,7 @@
       filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.12));
     }
     .logo .disc { fill: var(--logo-disc); }
-    .logo .mark { fill: var(--logo-ink); }
+    .logo .mark { fill: var(--logo-ink); color: var(--logo-ink); }
     .logo .spark { fill: var(--logo-spark); }
 
     .brand-text {
@@ -533,6 +533,36 @@
       font-size: 0.92rem;
     }
 
+    .pub {
+      padding: 0.95rem 0;
+    }
+    .pub + .pub {
+      border-top: 1px dashed var(--stroke);
+    }
+    .pub h3 {
+      margin: 0;
+      font-size: 0.98rem;
+      font-weight: 800;
+      line-height: 1.35;
+      color: var(--text);
+    }
+    .pub h3 a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .pub h3 a:hover { color: var(--accent); text-decoration: underline; }
+    .pub-meta {
+      margin: 0.35rem 0 0.45rem;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .pub p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
     footer.site {
       margin-top: 1.4rem;
       text-align: center;
@@ -653,15 +683,16 @@
     <div class="topbar no-print">
       <a class="brand" href="https://amirhosseinrezaeiashtiani.github.io/" aria-label="Amirhossein Rezaei Ashtiani">
         <svg class="logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <!-- Personal mark: interlocking AR for Amirhossein Rezaei + spark for Ashtiani / signal -->
+          <!-- Scope / sniper mark: precision + A -->
           <rect class="disc" x="1" y="1" width="62" height="62" rx="18" />
-          <path class="mark" d="M12.5 49h6.8l2.55-7.55h12.05L36.5 49H43.8L30.35 12.5h-7.7L12.5 49zm11.05-13.2 4.05-12.05 4.05 12.05H23.55z" />
-          <path class="mark" d="M39.2 12.5h8.35c6.55 0 10.95 3.7 10.95 9.65 0 4.95-2.75 8.15-6.7 9.45L58.5 49h-7.55l-5.85-15.2h-2.55V49H39.2V12.5zm7.85 5.7h-1.85v9.05h1.95c3.05 0 4.8-1.45 4.8-4.55 0-3-1.65-4.5-4.9-4.5z" />
-          <circle class="spark" cx="52.2" cy="16.2" r="2.8" />
+          <circle class="mark" cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="2.2" opacity="0.9" />
+          <path class="mark" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" d="M32 10v12M32 42v12M10 32h12M42 32h12" />
+          <circle class="spark" cx="32" cy="32" r="3.2" />
+          <path class="mark" d="M28 38V22l6 10 6-10v16h-3.2V28l-4.5 7.5h-2.6L25.2 28v10z" />
         </svg>
         <span class="brand-text">
           <strong>Amirhossein</strong>
-          <span>Rezaei Ashtiani · AR</span>
+          <span>Rezaei Ashtiani</span>
         </span>
       </a>
       <div class="actions">
@@ -686,29 +717,29 @@
           <img src="avatar.png" width="200" height="200" alt="Portrait of Amirhossein Rezaei Ashtiani" />
         </div>
         <div class="hero-copy">
-          <div class="eyebrow">Backend · Fintech · Applied AI</div>
+          <div class="eyebrow">Software Engineer · Backend · Applied AI</div>
           <h1>Amirhossein Rezaei Ashtiani</h1>
-          <p class="headline">I design and ship production systems that book, charge, notify, scrape, automate — and increasingly think.</p>
+          <p class="headline">Backend engineer with fintech and travel-platform experience; CS student at Amirkabir; published researcher.</p>
         </div>
       </div>
       <p class="lede">
-        Software engineer with a fintech backbone and a platform mindset. Started in high-throughput
-        banking/payment switches at Radin (Hasin Group), then moved into owning mission-critical
-        services at Eyvan Group — travel booking, payments, automation fleets, and AI product surfaces —
-        with a bias for systems that survive real traffic, messy partners, and rapid product iteration.
+        I work on backend services, payment flows, and internal tooling — first on banking payment switches at Radin (Hasin Group),
+        now on Eyvan Group’s travel platform. Most of my day is C# / .NET and Python in production GitLab repos: APIs, bots,
+        scrapers, staging, and ops automation. I use AI heavily in engineering (LLM-assisted development, chatbot backends,
+        connecting services to models) but I’m not an AI researcher — my published work is in construction / BIM systems.
       </p>
       <div class="hero-meta">
         <span class="pill">Tehran, Iran</span>
         <span class="pill">Amirkabir University of Technology</span>
         <span class="pill"><a href="https://linkedin.com/in/amirhossein-rezaeiashtiani-b46b171ba" target="_blank" rel="noopener">LinkedIn</a></span>
         <span class="pill"><a href="https://github.com/amirhosseinrezaeiashtiani" target="_blank" rel="noopener">GitHub</a></span>
-        <span class="pill"><a href="https://amirhosseinrezaeiashtiani.github.io/">Portfolio</a></span>
+        <span class="pill"><a href="https://doi.org/10.3390/asi5060109" target="_blank" rel="noopener">Publication</a></span>
       </div>
       <div class="stats">
-        <div class="stat"><b>4+ yrs</b><span>shipping production software</span></div>
-        <div class="stat"><b>Fintech → AI</b><span>payment switches to LLM products</span></div>
-        <div class="stat"><b>20+</b><span>services across company platforms</span></div>
-        <div class="stat"><b>Open</b><span>to Applied AI / LLM roles</span></div>
+        <div class="stat"><b>~4 yrs</b><span>industry experience</span></div>
+        <div class="stat"><b>1 paper</b><span>MDPI · BIM / systems</span></div>
+        <div class="stat"><b>.NET + Python</b><span>main production stack</span></div>
+        <div class="stat"><b>Industry + academic</b><span>open to both paths</span></div>
       </div>
     </header>
 
@@ -721,15 +752,14 @@
         </div>
         <p class="where">Eyvan Group / <a href="https://eyvantrip.com" target="_blank" rel="noopener">eyvantrip.com</a> · Tehran</p>
         <ul class="bullets">
-          <li>Architected and evolved the core travel domain API powering live hotel booking, partner integrations, and operational workflows used across web and admin surfaces.</li>
-          <li>Built resilient payment &amp; credit verification pipelines (Parbad / ZarinPal) with staging-first delivery so product and frontend can ship without guessing production behavior.</li>
-          <li>Led cross-service delivery across notifications, scrapers, reporting bots, inventory, FX feeds, and hardware lock APIs — treating the company GitLab as one platform, not isolated repos.</li>
-          <li>Hardened observability and release quality: Serilog → Elasticsearch/Seq, health checks, rate limits, Dockerized deploy paths, and GitLab CI/CD discipline.</li>
-          <li>Pushed applied AI into the product surface area (chatbot / agent tooling) and actively expand into LLM-powered automation for engineering and customer operations.</li>
+          <li>Backend development on EyvanTrip’s main .NET service: booking logic, payments (Parbad / ZarinPal), APIs used by the public site and admin panel.</li>
+          <li>Worked across related repos — notifications, scrapers, Telegram report bots, inventory, currency feeds — not only one codebase.</li>
+          <li>Owned staging setup and release checks so frontend/product can test backend changes before production.</li>
+          <li>Integrated AI into product/engineering: chatbot stack (Django + Celery), internal GitLab agent tooling, and LLM-assisted workflows in day-to-day development.</li>
         </ul>
 
         <div class="job-head" style="margin-top:1.45rem">
-          <h3>Software Engineer — Payments / Fintech</h3>
+          <h3>Software Engineer — Payments Team</h3>
           <div class="when">2022 — Apr 2024</div>
         </div>
         <p class="where">
@@ -737,191 +767,134 @@
           (Hasin Group / <a href="https://hasin.ir/" target="_blank" rel="noopener">hasin.ir</a>) · Tehran
         </p>
         <ul class="bullets">
-          <li>Worked on the payments team delivering banking &amp; fintech systems for enterprise clients — centered on payment-switch platforms used in Bank Maskan (بانک مسکن) programs and related payment products.</li>
-          <li>Contributed to high-reliability switch / sub-switch style payment routing work in the lineage of Radin’s long-running acceptor switch stack (commercially known as Homa) — transaction routing between acceptor networks and issuers, flexible load distribution, and production-grade payment operations.</li>
-          <li>Operated inside a regulated fintech environment where latency, correctness, settlement visibility, and failure handling matter more than feature demos — building instincts I still use for every payment path I ship.</li>
-          <li>Collaborated across banking solution streams (payment rails, ops tooling, and data-adjacent banking products) inside one of Hasin Group’s oldest tech companies, alongside brands like Myket, Taaghche, and Magnet under the same holding.</li>
+          <li>Worked on payment-switch software for banking clients, including Bank Maskan (بانک مسکن) related projects.</li>
+          <li>Contributed to transaction routing, switch/sub-switch operations, and production support in Radin’s Homa payment stack.</li>
+          <li>Learned high-reliability backend habits — correctness, logging, and failure handling — that I still apply in current work.</li>
         </ul>
-
-        <div class="ai-box">
-          <strong>AI direction I’m chasing next</strong>
-          <p>
-            LLM agents, RAG over internal ops knowledge, intelligent booking assistants,
-            automated anomaly detection on scrapers/inventory, and AI pair-programming
-            systems that sit inside real company workflows — not demo notebooks.
-            Fintech + AI is the combo I’m most excited to push next (fraud signals, switch ops copilots, payment anomaly agents).
-          </p>
-        </div>
       </section>
 
       <aside class="card">
-        <h2>Skills <span class="tag">signal</span></h2>
+        <h2>Skills</h2>
         <div class="skills">
           <div class="skill-block">
-            <strong>Applied AI</strong>
+            <strong>Backend</strong>
             <div class="chips">
-              <span class="chip hot">LLM products</span>
-              <span class="chip hot">Agents / chatbots</span>
-              <span class="chip hot">RAG systems</span>
-              <span class="chip hot">Prompt &amp; tool design</span>
-              <span class="chip">Python AI services</span>
-              <span class="chip">Celery workers</span>
-            </div>
-          </div>
-          <div class="skill-block">
-            <strong>Fintech &amp; payments</strong>
-            <div class="chips">
-              <span class="chip hot">Payment switches</span>
-              <span class="chip hot">Banking rails</span>
-              <span class="chip">Acquiring / routing</span>
-              <span class="chip">Parbad / ZarinPal</span>
-              <span class="chip">Settlement-aware design</span>
-              <span class="chip">High-reliability APIs</span>
-            </div>
-          </div>
-          <div class="skill-block">
-            <strong>Backend platforms</strong>
-            <div class="chips">
-              <span class="chip hot">ASP.NET Core</span>
+              <span class="chip hot">C# / ASP.NET Core</span>
               <span class="chip hot">.NET 8 / 9</span>
-              <span class="chip">Clean Architecture</span>
-              <span class="chip">MediatR</span>
               <span class="chip">EF Core</span>
-              <span class="chip">Dapper</span>
+              <span class="chip">MediatR</span>
+              <span class="chip">Python</span>
               <span class="chip">FastAPI</span>
               <span class="chip">Django</span>
               <span class="chip">Flask</span>
-              <span class="chip">Laravel</span>
             </div>
           </div>
           <div class="skill-block">
-            <strong>Data &amp; reliability</strong>
+            <strong>Fintech &amp; domain</strong>
             <div class="chips">
+              <span class="chip hot">Payment switches</span>
+              <span class="chip">Parbad / ZarinPal</span>
+              <span class="chip">REST APIs</span>
               <span class="chip">SQL Server</span>
-              <span class="chip">PostgreSQL</span>
               <span class="chip">Redis</span>
-              <span class="chip">Elasticsearch</span>
-              <span class="chip">Airflow</span>
-              <span class="chip">Selenium pipelines</span>
+              <span class="chip">Travel / booking systems</span>
             </div>
           </div>
           <div class="skill-block">
-            <strong>Product surfaces</strong>
+            <strong>AI (applied)</strong>
+            <div class="chips">
+              <span class="chip">LLM-assisted development</span>
+              <span class="chip">Chatbot backends</span>
+              <span class="chip">Service integration</span>
+              <span class="chip">Internal automation</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <strong>Frontend (collaboration)</strong>
             <div class="chips">
               <span class="chip">Next.js</span>
               <span class="chip">React</span>
               <span class="chip">TypeScript</span>
               <span class="chip">Tailwind</span>
-              <span class="chip">MUI</span>
-              <span class="chip">JWT / Identity</span>
             </div>
           </div>
           <div class="skill-block">
-            <strong>Shipping</strong>
+            <strong>Tools</strong>
             <div class="chips">
               <span class="chip">Docker</span>
               <span class="chip">GitLab CI/CD</span>
-              <span class="chip">Swagger / OpenAPI</span>
-              <span class="chip">Serilog / Seq</span>
-              <span class="chip">Staging ownership</span>
+              <span class="chip">Serilog / Elasticsearch</span>
+              <span class="chip">Airflow</span>
+              <span class="chip">Selenium</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <strong>Research methods</strong>
+            <div class="chips">
+              <span class="chip">SEM / PLS-SEM</span>
+              <span class="chip">EFA</span>
+              <span class="chip">Survey design</span>
+              <span class="chip">BIM / AECO</span>
             </div>
           </div>
         </div>
       </aside>
 
       <section class="card wide">
-        <h2>Selected impact across the platform</h2>
-        <p class="section-intro">Full surface of systems I’ve helped design, harden, and ship inside Eyvan’s GitLab ecosystem — written the way strong resumes sell outcomes, not file trees.</p>
+        <h2>Publications</h2>
+        <article class="pub">
+          <h3>
+            <a href="https://www.mdpi.com/2571-5577/5/6/109" target="_blank" rel="noopener">
+              Underlying Factors and Strategies for Organizational BIM Capabilities: The Case of Iran
+            </a>
+          </h3>
+          <p class="pub-meta">Applied System Innovation · 2022 · 5(6), 109 · DOI: 10.3390/asi5060109</p>
+          <p>
+            Co-author with Mohammad Sadra Rajabi, Mohammad Rezaeiashtiani, Afiqah R. Radzi, Alireza Famili, and Rahimi A. Rahman.
+            Identified organizational BIM capability factors in Iran using literature review, expert interviews, EFA, and PLS-SEM.
+            I contributed while at Amirkabir University of Technology (Civil Engineering).
+          </p>
+        </article>
+      </section>
+
+      <section class="card wide">
+        <h2>Selected projects</h2>
+        <p class="section-intro">Main repos I’ve worked on inside Eyvan Group’s GitLab — company code, summarized without internal details.</p>
         <div class="projects">
           <article class="project">
             <h3>EyvanTripService</h3>
             <div class="stack">C# · ASP.NET Core · .NET 8 · EF Core · Redis · Payments</div>
-            <p>Flagship domain API: booking logic, auth, partner flows, Parbad/ZarinPal payments, caching, health checks, and production-grade logging into Elasticsearch/Seq.</p>
+            <p>Core .NET 8 API for hotel booking, auth, payments, caching, and partner integrations.</p>
           </article>
           <article class="project">
             <h3>EyvanNotification</h3>
-            <div class="stack">C# · SMS · WebSockets · Scheduled jobs</div>
-            <p>Realtime and scheduled notification fabric (Ghasedak SMS + WebSocket paths) keeping customers and ops in sync when booking state changes.</p>
+            <div class="stack">C# · SMS · WebSockets</div>
+            <p>Notification service (Ghasedak SMS, scheduled jobs, WebSocket helpers).</p>
           </article>
           <article class="project">
             <h3>eyvanaichatbot</h3>
-            <div class="stack">Python · Django · Celery · Redis · PostgreSQL</div>
-            <p>AI/chat product backbone — async workers, durable queues, and messaging integrations (Pyrogram) for conversational automation at company scale.</p>
+            <div class="stack">Python · Django · Celery · Redis</div>
+            <p>Chatbot backend with async workers and Telegram integration — one of the main AI-connected products.</p>
           </article>
           <article class="project">
-            <h3>Front-End</h3>
-            <div class="stack">Next.js 16 · React 19 · Tailwind · Mapbox/Neshan</div>
-            <p>Consumer travel experience: high-conversion booking UI, Jalali-aware date flows, maps, motion, and tight coupling to backend contracts.</p>
+            <h3>Front-End &amp; Admin-Panel</h3>
+            <div class="stack">Next.js · React · MUI</div>
+            <p>Public booking site and internal admin panel consuming backend APIs.</p>
           </article>
           <article class="project">
-            <h3>Admin-Panel</h3>
-            <div class="stack">Next.js · MUI · Charts · Excel/PDF · QR</div>
-            <p>Internal command center for ops — analytics, exports, captcha-hardened flows, and tooling that makes messy hospitality operations controllable.</p>
-          </article>
-          <article class="project">
-            <h3>InventoryManagement</h3>
-            <div class="stack">.NET 9 · Identity · EF Core · Dapper · xUnit</div>
-            <p>Modern inventory/ops backend with identity, mail pipelines, validation, and a serious automated test suite.</p>
-          </article>
-          <article class="project">
-            <h3>Scraper + Scraper_Bot</h3>
-            <div class="stack">Python · FastAPI · Selenium · SQL</div>
-            <p>Competitive intelligence &amp; content ingestion fleet: browser automation, scheduling, FastAPI control plane, and bot-assisted operations.</p>
+            <h3>Scraper + bots</h3>
+            <div class="stack">Python · FastAPI · Selenium</div>
+            <p>Price/content scraping and Telegram reporting bots for ops.</p>
           </article>
           <article class="project">
             <h3>AirflowDAGs</h3>
-            <div class="stack">Python · Apache Airflow</div>
-            <p>Mission automation for occupancy, revenue, checkout warnings, and no-show guarantees — the quiet systems that protect overnight revenue.</p>
+            <div class="stack">Python · Airflow</div>
+            <p>Scheduled jobs for occupancy, revenue, and checkout alerts.</p>
           </article>
           <article class="project">
-            <h3>EyvanTripReportBot + balereportbot</h3>
-            <div class="stack">Python · Telegram · jdatetime</div>
-            <p>Executive-grade reporting over Telegram: structured daily intelligence for leadership without opening a dashboard.</p>
-          </article>
-          <article class="project">
-            <h3>CurrencyService + currency-tgju</h3>
-            <div class="stack">Python · Flask · Telethon · WebSocket</div>
-            <p>Live FX ingestion and distribution services feeding pricing-sensitive surfaces with low-latency market data.</p>
-          </article>
-          <article class="project">
-            <h3>train-reservation</h3>
-            <div class="stack">Python · FastAPI · SQLAlchemy · Jalali</div>
-            <p>Reservation product surface with auth-ready FastAPI stack, Excel pipelines, and Persian calendar-native UX support.</p>
-          </article>
-          <article class="project">
-            <h3>microtik</h3>
-            <div class="stack">Python · Flask · RouterOS API</div>
-            <p>Network/ops bridge to MikroTik RouterOS — turning infrastructure knobs into a clean HTTP API for hotel connectivity workflows.</p>
-          </article>
-          <article class="project">
-            <h3>SmartLockApiWrapper</h3>
-            <div class="stack">C# · .NET 9 · Native lock SDKs</div>
-            <p>Hardware-to-cloud adapter wrapping vendor smart-lock C/C++ SDKs into a Swagger-backed API for room access automation.</p>
-          </article>
-          <article class="project">
-            <h3>rahkaranapi</h3>
-            <div class="stack">C# · Enterprise ERP integration</div>
-            <p>Bridge into Rahkaran/ERP workflows — connecting travel operations to enterprise accounting and back-office systems.</p>
-          </article>
-          <article class="project">
-            <h3>eyvancrm</h3>
-            <div class="stack">Laravel 12 · PHP 8.3 · Vite</div>
-            <p>CRM platform (Krayin-based) for sales/ops pipelines, documents, and Persian-aware enterprise workflows.</p>
-          </article>
-          <article class="project">
-            <h3>EcoTourismService</h3>
-            <div class="stack">C# · .NET 8 · Clean Architecture</div>
-            <p>Parallel hospitality backend for eco-tourism verticals — same battle-tested architecture patterns as the core platform.</p>
-          </article>
-          <article class="project">
-            <h3>Perspolis Service + Front-End</h3>
-            <div class="stack">C# OTA integrations · Next.js · TypeScript</div>
-            <p>Multi-supplier travel stack: hotel/flight OTAs, DigiPay and partner cards on the backend; RTL Next.js product UI on the frontend.</p>
-          </article>
-          <article class="project">
-            <h3>GitLab Agent</h3>
-            <div class="stack">Python · Automation · AI-assisted PM</div>
-            <p>Internal agentic tooling that connects engineering workflow to delivery — proof I don’t just use AI, I productize it for teams.</p>
+            <h3>Other services</h3>
+            <div class="stack">Python · C# · mixed</div>
+            <p>InventoryManagement, CurrencyService, train-reservation, SmartLockApiWrapper, GitLab Agent, and related internal tools.</p>
           </article>
         </div>
       </section>
@@ -929,27 +902,36 @@
       <section class="card">
         <h2>Education</h2>
         <div class="job-head">
-          <h3>Amirkabir University of Technology</h3>
-          <div class="when">Tehran Polytechnic</div>
+          <h3>Computer Science — free study track</h3>
+          <div class="when">1402 — present</div>
         </div>
-        <p class="where">Undergraduate studies · Tehran, Iran</p>
+        <p class="where">Amirkabir University of Technology (Tehran Polytechnic) · Tehran</p>
         <ul class="bullets">
-          <li>Strong foundation in algorithms, systems thinking, and engineering discipline — applied daily on production platforms.</li>
+          <li>Studying CS as an آزاد (non-formal / free) student alongside full-time software engineering work.</li>
+        </ul>
+        <div class="job-head" style="margin-top:1.1rem">
+          <h3>Civil Engineering — undergraduate</h3>
+          <div class="when">1399 — 1401</div>
+        </div>
+        <p class="where">Amirkabir University of Technology (Tehran Polytechnic) · Tehran</p>
+        <ul class="bullets">
+          <li>Two years in Civil Engineering before switching focus to computer science and industry work.</li>
+          <li>BIM / construction systems research during this period led to the 2022 MDPI publication above.</li>
         </ul>
       </section>
 
       <section class="card">
-        <h2>Languages &amp; intent</h2>
+        <h2>Languages &amp; interests</h2>
         <ul class="bullets">
           <li><strong>Persian:</strong> Native</li>
-          <li><strong>English:</strong> Professional working proficiency</li>
-          <li><strong>Now hunting:</strong> Applied AI / LLM engineer roles, AI platform teams, and backend seats where models meet real users.</li>
+          <li><strong>English:</strong> Professional working proficiency (reading papers, documentation, team communication)</li>
+          <li><strong>Looking for:</strong> Backend / platform engineering roles, applied-AI product teams, or research-oriented positions where software + systems background is useful.</li>
         </ul>
       </section>
     </div>
 
     <footer class="site">
-      Amirhossein Rezaei Ashtiani · Backend &amp; Applied AI · amirhosseinrezaeiashtiani.github.io
+      Amirhossein Rezaei Ashtiani · Software Engineer · amirhosseinrezaeiashtiani.github.io
     </footer>
   </div>
 
