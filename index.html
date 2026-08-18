@@ -3,9 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Amirhossein Rezaei Ashtiani — Software Engineer</title>
-  <meta name="description" content="Amirhossein Rezaei Ashtiani — Software engineer (backend, fintech, applied AI). Radin / Hasin, Eyvan Group. AUT. Published researcher." />
+  <title>Amirhossein Rezaei Ashtiani — Backend Engineer</title>
+  <meta name="description" content="Backend Engineer (.NET / C# / Python). Payments, travel booking APIs, and production systems. Previously Radin (Hasin Group); currently Eyvan Group." />
   <meta name="author" content="Amirhossein Rezaei Ashtiani" />
+  <link rel="canonical" href="https://amirhosseinrezaeiashtiani.github.io/" />
+  <meta property="og:title" content="Amirhossein Rezaei Ashtiani — Backend Engineer" />
+  <meta property="og:description" content=".NET / C# / Python · FinTech · Payments · Travel · Production Systems" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://amirhosseinrezaeiashtiani.github.io/" />
+  <meta name="theme-color" content="#0c6b6e" />
+  <meta name="robots" content="index,follow" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Amirhossein Rezaei Ashtiani",
+    "jobTitle": "Backend Engineer",
+    "url": "https://amirhosseinrezaeiashtiani.github.io/",
+    "image": "https://amirhosseinrezaeiashtiani.github.io/avatar.png",
+    "address": { "@type": "PostalAddress", "addressLocality": "Tehran", "addressCountry": "IR" },
+    "sameAs": [
+      "https://linkedin.com/in/amirhossein-rezaeiashtiani-b46b171ba",
+      "https://github.com/amirhosseinrezaeiashtiani",
+      "https://doi.org/10.3390/asi5060109"
+    ]
+  }
+  </script>
   <script>
     (function () {
       try {
@@ -563,6 +586,69 @@
       font-size: 0.92rem;
     }
 
+    .skip {
+      position: absolute;
+      left: -999px;
+      top: 0;
+      background: var(--panel-strong);
+      color: var(--text);
+      padding: 0.5rem 0.8rem;
+      z-index: 10;
+    }
+    .skip:focus { left: 1rem; top: 1rem; }
+
+    .feat-grid {
+      display: grid;
+      gap: 0.9rem;
+    }
+    .feat {
+      padding: 1.15rem 1.15rem 1.2rem;
+      border-radius: 16px;
+      background: var(--panel-inset);
+      border: 1px solid var(--stroke);
+    }
+    .feat h3 {
+      margin: 0;
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .feat .one-liner {
+      margin: 0.35rem 0 0.7rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .feat h4 {
+      margin: 0.7rem 0 0.35rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 800;
+    }
+    .feat .why {
+      margin: 0.35rem 0 0;
+      color: var(--text);
+      font-size: 0.93rem;
+    }
+
+    .signal-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .signal-list li {
+      padding: 0.32rem 0.65rem;
+      border-radius: 999px;
+      background: var(--chip-bg);
+      border: 1px solid var(--stroke);
+      font-size: 0.82rem;
+      font-weight: 650;
+    }
+
     footer.site {
       margin-top: 1.4rem;
       text-align: center;
@@ -617,7 +703,8 @@
       body::before { display: none !important; }
       .no-print { display: none !important; }
       .wrap { width: 100%; margin: 0; padding: 0; }
-      .hero, .card, .project, .stat, .ai-box {
+      .skip { display: none !important; }
+      .hero, .card, .project, .feat, .stat, .ai-box {
         background: #fff !important;
         border: 1px solid #d8dee6 !important;
         box-shadow: none !important;
@@ -642,16 +729,16 @@
       .hero-top { display: block; }
       .lede, .hero-meta { clear: both; }
       h1, h2, h3, .headline, .job-head h3, .project h3, .brand-text strong { color: #111 !important; }
-      .lede, .section-intro, .where, .project p, .stat span, ul.bullets, .ai-box p, .brand-text span { color: #333 !important; }
-      .eyebrow, .when, .project .stack, .stat b, .chip.hot, h2 .tag { color: #0a6b4a !important; }
+      .lede, .section-intro, .where, .project p, .feat .one-liner, .feat .why, .stat span, ul.bullets, .ai-box p, .brand-text span { color: #333 !important; }
+      .eyebrow, .when, .project .stack, .feat h4, .stat b, .chip.hot, h2 .tag { color: #0a6b4a !important; }
       .pill, .chip {
         background: #f3f5f7 !important;
         border-color: #d5dbe3 !important;
         color: #222 !important;
       }
       .pill a, .where a { color: #0b5fff !important; }
-      .grid, .projects { display: block; }
-      .card, .project {
+      .grid, .projects, .feat-grid { display: block; }
+      .card, .project, .feat {
         margin-bottom: 8pt;
         padding: 8pt 0;
         border: none !important;
@@ -679,6 +766,7 @@
   </style>
 </head>
 <body>
+  <a class="skip" href="#content">Skip to content</a>
   <div class="wrap">
     <div class="topbar no-print">
       <a class="brand" href="https://amirhosseinrezaeiashtiani.github.io/" aria-label="Amirhossein Rezaei Ashtiani">
@@ -709,35 +797,33 @@
       </div>
     </div>
 
-    <header class="hero">
+    <header class="hero" id="content">
       <div class="hero-top">
         <div class="portrait">
-          <img src="avatar.png" width="200" height="200" alt="Portrait of Amirhossein Rezaei Ashtiani" />
+          <img src="avatar.png" width="200" height="200" alt="Portrait of Amirhossein Rezaei Ashtiani" decoding="async" fetchpriority="high" />
         </div>
         <div class="hero-copy">
-          <div class="eyebrow">Software Engineer · Backend · Applied AI</div>
+          <div class="eyebrow">Backend Engineer · .NET / C# / Python</div>
           <h1>Amirhossein Rezaei Ashtiani</h1>
-          <p class="headline">Backend engineer with fintech and travel-platform experience; published researcher.</p>
+          <p class="headline">FinTech · Payments · Travel · Production Systems</p>
         </div>
       </div>
       <p class="lede">
-        I work on backend services, payment flows, and internal tooling — first on banking payment switches at Radin (Hasin Group),
-        now on Eyvan Group’s travel platform. Most of my day is C# / .NET and Python in production GitLab repos: APIs, bots,
-        scrapers, staging, and ops automation. I use AI heavily in engineering (LLM-assisted development, chatbot backends,
-        connecting services to models) but I’m not an AI researcher — my published work is in construction / BIM systems.
+        I build production backend systems: payment routing at Radin (Hasin Group), then booking, payments, and supporting services at Eyvan Group.
+        Day-to-day work is C# / ASP.NET Core and Python — APIs, SQL, caching, CI/CD, and operational services that the public site and admin tools depend on.
+        Applied AI shows up where it is useful (chatbot backend, LLM-assisted engineering), not as the job title.
       </p>
       <div class="hero-meta">
         <span class="pill">Tehran, Iran</span>
-        <span class="pill">Islamic Azad University</span>
         <span class="pill"><a href="https://linkedin.com/in/amirhossein-rezaeiashtiani-b46b171ba" target="_blank" rel="noopener">LinkedIn</a></span>
         <span class="pill"><a href="https://github.com/amirhosseinrezaeiashtiani" target="_blank" rel="noopener">GitHub</a></span>
         <span class="pill"><a href="https://doi.org/10.3390/asi5060109" target="_blank" rel="noopener">Publication</a></span>
       </div>
       <div class="stats">
-        <div class="stat"><b>~4 yrs</b><span>industry experience</span></div>
-        <div class="stat"><b>1 paper</b><span>MDPI · BIM / systems</span></div>
-        <div class="stat"><b>.NET + Python</b><span>main production stack</span></div>
-        <div class="stat"><b>Industry + academic</b><span>open to both paths</span></div>
+        <div class="stat"><b>~4 yrs</b><span>backend in production</span></div>
+        <div class="stat"><b>2022–2024</b><span>payments / FinTech</span></div>
+        <div class="stat"><b>2024–now</b><span>travel platform APIs</span></div>
+        <div class="stat"><b>.NET + Python</b><span>shipping stack</span></div>
       </div>
     </header>
 
@@ -745,19 +831,19 @@
       <section class="card">
         <h2>Experience</h2>
         <div class="job-head">
-          <h3>Software Engineer — Backend &amp; Platforms</h3>
+          <h3>Backend Engineer</h3>
           <div class="when">May 2024 — Present</div>
         </div>
         <p class="where">Eyvan Group / <a href="https://eyvantrip.com" target="_blank" rel="noopener">eyvantrip.com</a> · Tehran</p>
         <ul class="bullets">
-          <li>Backend development on EyvanTrip’s main .NET service: booking logic, payments (Parbad / ZarinPal), APIs used by the public site and admin panel.</li>
-          <li>Worked across related repos — notifications, scrapers, Telegram report bots, inventory, currency feeds — not only one codebase.</li>
-          <li>Owned staging setup and release checks so frontend/product can test backend changes before production.</li>
-          <li>Integrated AI into product/engineering: chatbot stack (Django + Celery), internal GitLab agent tooling, and LLM-assisted workflows in day-to-day development.</li>
+          <li>Own backend work on the main booking API: reservations, auth, partner flows, and payments (Parbad with ZarinPal and Parsian).</li>
+          <li>Ship supporting production services — rate scraping, inventory, currency feeds, report bots, and a Django/Celery chatbot — not a single-repo role.</li>
+          <li>Operate the service in staging and production: GitLab CI deploys, environment config, health checks, Serilog, Redis cache, IP rate limiting.</li>
+          <li>Work with frontend/admin consumers of the API; keep changes testable before they hit the public site.</li>
         </ul>
 
         <div class="job-head" style="margin-top:1.45rem">
-          <h3>Software Engineer — Payments Team</h3>
+          <h3>Backend Engineer — Payments</h3>
           <div class="when">2022 — Apr 2024</div>
         </div>
         <p class="where">
@@ -765,9 +851,9 @@
           (Hasin Group / <a href="https://hasin.ir/" target="_blank" rel="noopener">hasin.ir</a>) · Tehran
         </p>
         <ul class="bullets">
-          <li>Worked on payment-switch software for banking clients, including Maskan Bank (بانک مسکن) related projects.</li>
+          <li>Worked on payment-switch software for banking clients, including Maskan Bank (بانک مسکن).</li>
           <li>Contributed to transaction routing, switch/sub-switch operations, and production support in Radin’s Homa payment stack.</li>
-          <li>Learned high-reliability backend habits — correctness, logging, and failure handling — that I still apply in current work.</li>
+          <li>Built habits that still show up in current APIs: correctness around money, logging, and failure handling.</li>
         </ul>
       </section>
 
@@ -779,64 +865,201 @@
             <div class="chips">
               <span class="chip hot">C# / ASP.NET Core</span>
               <span class="chip hot">.NET 8 / 9</span>
-              <span class="chip">EF Core</span>
-              <span class="chip">MediatR</span>
               <span class="chip">Python</span>
               <span class="chip">FastAPI</span>
               <span class="chip">Django</span>
               <span class="chip">Flask</span>
-            </div>
-          </div>
-          <div class="skill-block">
-            <strong>Fintech &amp; domain</strong>
-            <div class="chips">
-              <span class="chip hot">Payment switches</span>
-              <span class="chip">Parbad / ZarinPal</span>
               <span class="chip">REST APIs</span>
-              <span class="chip">SQL Server</span>
-              <span class="chip">Redis</span>
-              <span class="chip">Travel / booking systems</span>
             </div>
           </div>
           <div class="skill-block">
-            <strong>AI (applied)</strong>
+            <strong>Architecture (in use)</strong>
             <div class="chips">
-              <span class="chip">LLM-assisted development</span>
+              <span class="chip hot">Clean Architecture layers</span>
+              <span class="chip">MediatR</span>
+              <span class="chip">CQRS-style commands/queries</span>
+              <span class="chip">Repository + DI</span>
+              <span class="chip">Modular monolith</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <strong>Data &amp; payments</strong>
+            <div class="chips">
+              <span class="chip hot">SQL Server / EF Core</span>
+              <span class="chip">Dapper</span>
+              <span class="chip">Redis cache</span>
+              <span class="chip">MongoDB (audit)</span>
+              <span class="chip">Parbad / ZarinPal / Parsian</span>
+              <span class="chip">Payment switches</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <strong>Production</strong>
+            <div class="chips">
+              <span class="chip hot">GitLab CI/CD</span>
+              <span class="chip">Docker / Compose</span>
+              <span class="chip">Serilog → Elasticsearch / Seq</span>
+              <span class="chip">Health checks</span>
+              <span class="chip">Rate limiting</span>
+              <span class="chip">JWT / Identity</span>
+              <span class="chip">EF migrations</span>
+              <span class="chip">Background services</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <strong>Jobs &amp; services</strong>
+            <div class="chips">
+              <span class="chip">Celery + Redis</span>
+              <span class="chip">Scheduled scrapers</span>
+              <span class="chip">xUnit</span>
+              <span class="chip">FluentValidation</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <strong>Applied AI</strong>
+            <div class="chips">
               <span class="chip">Chatbot backends</span>
-              <span class="chip">Service integration</span>
-              <span class="chip">Internal automation</span>
-            </div>
-          </div>
-          <div class="skill-block">
-            <strong>Frontend (collaboration)</strong>
-            <div class="chips">
-              <span class="chip">Next.js</span>
-              <span class="chip">React</span>
-              <span class="chip">TypeScript</span>
-              <span class="chip">Tailwind</span>
-            </div>
-          </div>
-          <div class="skill-block">
-            <strong>Tools</strong>
-            <div class="chips">
-              <span class="chip">Docker</span>
-              <span class="chip">GitLab CI/CD</span>
-              <span class="chip">Serilog / Elasticsearch</span>
-              <span class="chip">Airflow</span>
-              <span class="chip">Selenium</span>
-            </div>
-          </div>
-          <div class="skill-block">
-            <strong>Research methods</strong>
-            <div class="chips">
-              <span class="chip">SEM / PLS-SEM</span>
-              <span class="chip">EFA</span>
-              <span class="chip">Survey design</span>
-              <span class="chip">BIM / AECO</span>
+              <span class="chip">LLM-assisted development</span>
             </div>
           </div>
         </div>
       </aside>
+
+      <section class="card wide">
+        <h2>Featured work</h2>
+        <p class="section-intro">
+          Company backends are private. Descriptions below are from production code I work on — no private repository URLs.
+        </p>
+        <div class="feat-grid">
+          <article class="feat">
+            <h3>EyvanTrip booking &amp; payments API</h3>
+            <p class="one-liner">Core travel-platform API used by the public site and admin tools for hotels, tours, auth, and checkout.</p>
+            <h4>My engineering contribution</h4>
+            <ul class="bullets">
+              <li>Backend on a layered ASP.NET Core service (API / Application / Domain / Infrastructure) with MediatR, FluentValidation, and repository + DI.</li>
+              <li>Payment integration via Parbad (ZarinPal, Parsian) on real booking flows.</li>
+              <li>Production wiring: JWT auth and policies, Redis cache, IP rate limiting, EF Core migrations, Serilog (file / Elasticsearch / Seq), live/ready health checks.</li>
+              <li>Background hosted services for audit-log retention and chain verification; GitLab CI for staging and production deploys.</li>
+            </ul>
+            <h4>Technology</h4>
+            <div class="chips">
+              <span class="chip hot">ASP.NET Core</span>
+              <span class="chip">.NET 8</span>
+              <span class="chip">MediatR</span>
+              <span class="chip">EF Core / SQL Server</span>
+              <span class="chip">Redis</span>
+              <span class="chip">JWT</span>
+              <span class="chip">Parbad</span>
+              <span class="chip">Serilog</span>
+            </div>
+            <h4>Why it matters</h4>
+            <p class="why">This is the money path: reservations and payments have to be correct, observable, and deployable — not a demo API.</p>
+          </article>
+
+          <article class="feat">
+            <h3>Inventory management</h3>
+            <p class="one-liner">.NET 9 inventory/ops backend with ASP.NET Identity, command/query handlers, and automated tests.</p>
+            <h4>My engineering contribution</h4>
+            <ul class="bullets">
+              <li>Work in a Clean Architecture layout (Domain / Application / Infrastructure / Presentation).</li>
+              <li>MediatR commands and queries with logging and validation pipeline behaviors.</li>
+              <li>Identity, JWT, EF Core, Dapper, FluentValidation, and xUnit coverage on warehouse/access-control features.</li>
+            </ul>
+            <h4>Technology</h4>
+            <div class="chips">
+              <span class="chip hot">.NET 9</span>
+              <span class="chip">MediatR / CQRS-style</span>
+              <span class="chip">ASP.NET Identity</span>
+              <span class="chip">EF Core</span>
+              <span class="chip">Dapper</span>
+              <span class="chip">xUnit</span>
+            </div>
+            <h4>Why it matters</h4>
+            <p class="why">Shows the same backend discipline on an ops domain: separated handlers, identity, and tests — not only the booking service.</p>
+          </article>
+
+          <article class="feat">
+            <h3>Competitive rate scraper</h3>
+            <p class="one-liner">Scheduled Python service that collects competitor hotel rates into SQL and exposes a FastAPI control plane.</p>
+            <h4>My engineering contribution</h4>
+            <ul class="bullets">
+              <li>Selenium scrapers for competitor sites, with a shared base client and per-source parsers.</li>
+              <li>Daily scheduler (including cache rebuild jobs) and FastAPI endpoints for ops control.</li>
+              <li>GitLab CI deploy into the same production environment as the rest of the platform.</li>
+            </ul>
+            <h4>Technology</h4>
+            <div class="chips">
+              <span class="chip hot">Python</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">Selenium</span>
+              <span class="chip">SQL</span>
+              <span class="chip">schedule</span>
+              <span class="chip">GitLab CI</span>
+            </div>
+            <h4>Why it matters</h4>
+            <p class="why">Pricing is only useful if ingestion keeps running; this is a production data pipeline, not a one-off script.</p>
+          </article>
+
+          <article class="feat">
+            <h3>Travel chatbot backend</h3>
+            <p class="one-liner">Django service with Celery workers and Redis that connects Telegram traffic to model/API calls.</p>
+            <h4>My engineering contribution</h4>
+            <ul class="bullets">
+              <li>Async workers and beat scheduling over Redis; PostgreSQL as the system of record.</li>
+              <li>Docker Compose for web, Telegram processes, Celery, Redis, and Postgres with healthchecks and restart policy.</li>
+              <li>Gunicorn + Pyrogram stack for a long-running messaging backend, not a notebook demo.</li>
+            </ul>
+            <h4>Technology</h4>
+            <div class="chips">
+              <span class="chip hot">Django</span>
+              <span class="chip">Celery</span>
+              <span class="chip">Redis</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Docker Compose</span>
+              <span class="chip">Gunicorn</span>
+            </div>
+            <h4>Why it matters</h4>
+            <p class="why">Applied AI here is a real backend: queues, workers, and deployment — not a research paper.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card wide">
+        <h2>Also in production</h2>
+        <p class="section-intro">Same platform, condensed. Private company code — no public repository links.</p>
+        <div class="projects">
+          <article class="project">
+            <h3>Eco-tourism API</h3>
+            <div class="stack">C# · .NET 8 · Clean Architecture · Docker</div>
+            <p>Hospitality backend with API / Application / Domain / Infrastructure layers and Docker Compose for dev and production images.</p>
+          </article>
+          <article class="project">
+            <h3>Train reservation API</h3>
+            <div class="stack">Python · FastAPI · SQLAlchemy</div>
+            <p>Train booking HTTP API with SQLAlchemy models and Jalali-aware product flows.</p>
+          </article>
+          <article class="project">
+            <h3>Currency feeds</h3>
+            <div class="stack">Python · Flask · Telegram</div>
+            <p>FX rate ingestion and a Flask API used by pricing-sensitive services.</p>
+          </article>
+          <article class="project">
+            <h3>Ops report bots</h3>
+            <div class="stack">Python · Telegram</div>
+            <p>Daily leadership/ops reporting over Telegram so booking numbers do not wait on a dashboard click.</p>
+          </article>
+          <article class="project">
+            <h3>MikroTik ops API</h3>
+            <div class="stack">Python · Flask · RouterOS</div>
+            <p>HTTP wrapper around MikroTik RouterOS for hotel-network workflows.</p>
+          </article>
+          <article class="project">
+            <h3>Public site &amp; admin panel</h3>
+            <div class="stack">Next.js · React · TypeScript</div>
+            <p>Consumers of the booking API — I collaborate on contracts, staging, and release checks rather than owning the UI.</p>
+          </article>
+        </div>
+      </section>
 
       <section class="card wide">
         <h2>Publications</h2>
@@ -849,142 +1072,42 @@
           <p class="pub-meta">Applied System Innovation · 2022 · 5(6), 109 · DOI: 10.3390/asi5060109</p>
           <p>
             Co-author with Mohammad Sadra Rajabi, Mohammad Rezaeiashtiani, Afiqah R. Radzi, Alireza Famili, and Rahimi A. Rahman.
-            Identified organizational BIM capability factors in Iran using literature review, expert interviews, EFA, and PLS-SEM.
-            I contributed while at Amirkabir University of Technology (Civil Engineering).
+            Organizational BIM capability factors in Iran — literature, expert interviews, EFA, and PLS-SEM.
+            Contributed while in Civil Engineering at Amirkabir University of Technology.
           </p>
         </article>
       </section>
 
-      <section class="card wide">
-        <h2>Selected projects</h2>
-        <p class="section-intro">Repos I’ve worked on inside Eyvan Group’s GitLab — company code, summarized without internal details.</p>
-        <div class="projects">
-          <article class="project">
-            <h3>EyvanTripService</h3>
-            <div class="stack">C# · ASP.NET Core · .NET 8 · EF Core · Redis · Payments</div>
-            <p>Core domain API: booking logic, auth, partner flows, Parbad/ZarinPal payments, caching, health checks, and logging into Elasticsearch/Seq.</p>
-          </article>
-          <article class="project">
-            <h3>EyvanNotification</h3>
-            <div class="stack">C# · SMS · WebSockets · Scheduled jobs</div>
-            <p>Notification service (Ghasedak SMS + WebSocket paths) for customer and ops updates when booking state changes.</p>
-          </article>
-          <article class="project">
-            <h3>eyvanaichatbot</h3>
-            <div class="stack">Python · Django · Celery · Redis · PostgreSQL</div>
-            <p>Chatbot backend with async workers, durable queues, and Telegram integration (Pyrogram) — connected to AI/messaging flows.</p>
-          </article>
-          <article class="project">
-            <h3>Front-End</h3>
-            <div class="stack">Next.js 16 · React 19 · Tailwind · Mapbox/Neshan</div>
-            <p>Public travel site: booking UI, Jalali date handling, maps, and integration with backend APIs.</p>
-          </article>
-          <article class="project">
-            <h3>Admin-Panel</h3>
-            <div class="stack">Next.js · MUI · Charts · Excel/PDF · QR</div>
-            <p>Internal admin panel for ops: analytics, exports, captcha flows, and day-to-day hospitality operations.</p>
-          </article>
-          <article class="project">
-            <h3>InventoryManagement</h3>
-            <div class="stack">.NET 9 · Identity · EF Core · Dapper · xUnit</div>
-            <p>Inventory/ops backend with identity, mail pipelines, validation, and automated tests.</p>
-          </article>
-          <article class="project">
-            <h3>Scraper + Scraper_Bot</h3>
-            <div class="stack">Python · FastAPI · Selenium · SQL</div>
-            <p>Competitive price/content scraping with scheduling, FastAPI control plane, and companion bot for ops.</p>
-          </article>
-          <article class="project">
-            <h3>AirflowDAGs</h3>
-            <div class="stack">Python · Apache Airflow</div>
-            <p>Scheduled jobs for occupancy, revenue, checkout warnings, and no-show guarantees.</p>
-          </article>
-          <article class="project">
-            <h3>EyvanTripReportBot + balereportbot</h3>
-            <div class="stack">Python · Telegram · jdatetime</div>
-            <p>Daily reporting bots over Telegram for leadership and ops teams.</p>
-          </article>
-          <article class="project">
-            <h3>CurrencyService + currency-tgju</h3>
-            <div class="stack">Python · Flask · Telethon · WebSocket</div>
-            <p>FX rate ingestion and distribution for pricing-sensitive services.</p>
-          </article>
-          <article class="project">
-            <h3>train-reservation</h3>
-            <div class="stack">Python · FastAPI · SQLAlchemy · Jalali</div>
-            <p>Train reservation stack with FastAPI, SQLAlchemy, Excel export, and Persian calendar support.</p>
-          </article>
-          <article class="project">
-            <h3>microtik</h3>
-            <div class="stack">Python · Flask · RouterOS API</div>
-            <p>HTTP API wrapper around MikroTik RouterOS for hotel network/ops workflows.</p>
-          </article>
-          <article class="project">
-            <h3>SmartLockApiWrapper</h3>
-            <div class="stack">C# · .NET 9 · Native lock SDKs</div>
-            <p>Wrapper around vendor smart-lock C/C++ SDKs, exposed as a Swagger-backed API.</p>
-          </article>
-          <article class="project">
-            <h3>rahkaranapi</h3>
-            <div class="stack">C# · Enterprise ERP integration</div>
-            <p>Integration bridge into Rahkaran/ERP and back-office accounting workflows.</p>
-          </article>
-          <article class="project">
-            <h3>eyvancrm</h3>
-            <div class="stack">Laravel 12 · PHP 8.3 · Vite</div>
-            <p>CRM platform (Krayin-based) for sales/ops pipelines and document workflows.</p>
-          </article>
-          <article class="project">
-            <h3>EcoTourismService</h3>
-            <div class="stack">C# · .NET 8 · Clean Architecture</div>
-            <p>Hospitality backend for eco-tourism verticals using the same architecture patterns as the core platform.</p>
-          </article>
-          <article class="project">
-            <h3>Perspolis Service + Front-End</h3>
-            <div class="stack">C# OTA integrations · Next.js · TypeScript</div>
-            <p>Multi-supplier travel backend (hotel/flight OTAs, payment partners) plus RTL Next.js product UI.</p>
-          </article>
-          <article class="project">
-            <h3>GitLab Agent</h3>
-            <div class="stack">Python · Automation · AI-assisted PM</div>
-            <p>Internal tooling that connects GitLab workflow to delivery — sprint reports, issue management, and AI-assisted ops.</p>
-          </article>
-        </div>
-      </section>
-
       <section class="card">
         <h2>Education</h2>
+        <p class="section-intro">Secondary to professional work. Degree in progress alongside a full-time backend role.</p>
         <div class="job-head">
           <h3>B.Sc. Computer Engineering</h3>
           <div class="when">1402 — present</div>
         </div>
         <p class="where">Islamic Azad University · Tehran</p>
-        <ul class="bullets">
-          <li>Currently pursuing a B.Sc. in Computer Engineering alongside full-time software engineering work.</li>
-        </ul>
         <div class="job-head" style="margin-top:1.1rem">
-          <h3>Civil Engineering</h3>
+          <h3>Civil Engineering (coursework)</h3>
           <div class="when">1399 — 1401</div>
         </div>
         <p class="where">Amirkabir University of Technology (Tehran Polytechnic) · Tehran</p>
         <ul class="bullets">
-          <li>Two years in Civil Engineering before switching focus to computer science and industry work.</li>
-          <li>BIM / construction systems research during this period led to the 2022 MDPI publication above.</li>
+          <li>Two years before switching into software. BIM / construction-systems research from this period is the 2022 MDPI paper.</li>
         </ul>
       </section>
 
       <section class="card">
-        <h2>Languages &amp; interests</h2>
+        <h2>Languages</h2>
         <ul class="bullets">
           <li><strong>Persian:</strong> Native</li>
-          <li><strong>English:</strong> Professional working proficiency (reading papers, documentation, team communication)</li>
-          <li><strong>Looking for:</strong> Backend / platform engineering roles, applied-AI product teams, or research-oriented positions where software + systems background is useful.</li>
+          <li><strong>English:</strong> Professional working proficiency</li>
+          <li><strong>Open to:</strong> Mid-level Backend Engineer roles — payments, travel, or other production API systems.</li>
         </ul>
       </section>
     </div>
 
     <footer class="site">
-      Amirhossein Rezaei Ashtiani · Software Engineer · amirhosseinrezaeiashtiani.github.io
+      Amirhossein Rezaei Ashtiani · Backend Engineer · amirhosseinrezaeiashtiani.github.io
     </footer>
   </div>
 

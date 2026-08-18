@@ -1,5 +1,5 @@
-# Amirhossein Rezaei Ashtiani — CV
+# Amirhossein Rezaei Ashtiani — Backend Engineer
 
-Personal curriculum vitae site, hosted with GitHub Pages.
+Personal CV site, hosted with GitHub Pages.
 
 **Live URL:** https://amirhosseinrezaeiashtiani.github.io/
